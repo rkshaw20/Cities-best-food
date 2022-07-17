@@ -1,4 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 .App {
-  font-family: sans-serif;
+  font-family: "Ibarra Real Nova", serif;
+}
+
+:root {
+  --primary-color: wheat;
+  --secondary-color: rgba(128, 126, 0, 0.452);
+  --hover-color: rgba(210, 105, 30, 0.363);
+  --txt-color: rgb(238, 130, 130);
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  color: var(--txt-color);
+}
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  margin: 0;
+  margin-top: 1rem;
   text-align: center;
+}
+/*heading*/
+
+.heading {
+  display: inline;
+  font-size: 3rem;
+}
+
+/* intro*/
+p {
+  font-size: ;
+}
+
+/*button*/
+
+button {
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  border: 3px var(--primary-color) solid;
+}
+button:hover {
+  background-color: var(--hover-color);
+}
+
+/*food image*/
+
+.food-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.food-name {
+  font-weight: bold;
+}
+
+/* content*/
+.list-holder {
+  padding: 0.5rem 0.5rem;
+  margin: auto;
+}
+
+.list {
+  font-size: large;
+  color: rgb(158, 73, 113);
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 2px var(--secondary-color) solid;
+}
+@media (max-width: 900px) {
+  .list-holder {
+    margin: 0.8rem;
+  }
 }
